@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20220206171308",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "game_type",
+  "fields": [
+    {
+      "fieldName": "gameTypeName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "maxlength"],
+      "fieldValidateRulesMaxlength": "30"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "GameType",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "franchise",
+      "otherEntityRelationshipName": "gameType",
+      "relationshipName": "franchise",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

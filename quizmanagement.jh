@@ -1,0 +1,57 @@
+
+entity Franchise {
+	franchiseName String required unique maxlength(80)
+}
+
+entity GameType {
+	gameTypeName String required unique maxlength(30)
+}
+
+entity Team {
+	teamName String required unique maxlength(60)
+}
+
+entity Player {
+	nickName String required unique maxlength(30)
+}
+
+entity GameResult {
+	place Integer required min(0),
+    points Integer required min(0),
+    link String,
+    table ImageBlob
+}
+
+entity Restaurant {
+	restaurantName String required unique maxlength(60),
+    address String required maxlength(100)
+}
+
+entity Game {
+	dateTime ZonedDateTime required,
+    theme String required
+}
+
+relationship OneToOne {
+    Game{gameResult(place)} to GameResult{game(franchiseName)}
+    Player{internalUser(login)} to User
+}
+
+relationship OneToMany {
+	GameType to Franchise{gameType(gameTypeName)}
+    Franchise to Game{franchise(franchiseName)}
+    Team to Game{team(teamName)}
+    Restaurant to Game{restaurant(restaurantName)}
+}
+
+// Set pagination options
+paginate Game, Team, Franchise, GameType, Player with infinite-scroll
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

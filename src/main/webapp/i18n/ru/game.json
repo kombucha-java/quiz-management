@@ -1,0 +1,29 @@
+{
+  "quizManagementApp": {
+    "game": {
+      "home": {
+        "title": "Games",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Game",
+        "createOrEditLabel": "Создать или отредактировать Game",
+        "notFound": "Games не найдено"
+      },
+      "created": "Новый Game создан с идентификатором {{ param }}",
+      "updated": "Game обновлен с идентификатором {{ param }}",
+      "deleted": "Game удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Game {{ id }}?"
+      },
+      "detail": {
+        "title": "Game"
+      },
+      "id": "ID",
+      "dateTime": "Date Time",
+      "theme": "Theme",
+      "gameResult": "Game Result",
+      "franchise": "Franchise",
+      "team": "Team",
+      "restaurant": "Restaurant"
+    }
+  }
+}

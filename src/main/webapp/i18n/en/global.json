@@ -7,6 +7,13 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "franchise": "Franchise",
+        "gameType": "Game Type",
+        "team": "Team",
+        "player": "Player",
+        "gameResult": "Game Result",
+        "restaurant": "Restaurant",
+        "game": "Game",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
