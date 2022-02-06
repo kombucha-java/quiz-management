@@ -1,0 +1,25 @@
+{
+  "quizManagementApp": {
+    "gameType": {
+      "home": {
+        "title": "Game Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Game Type",
+        "createOrEditLabel": "Create or edit a Game Type",
+        "notFound": "No Game Types found"
+      },
+      "created": "A new Game Type is created with identifier {{ param }}",
+      "updated": "A Game Type is updated with identifier {{ param }}",
+      "deleted": "A Game Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Game Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Game Type"
+      },
+      "id": "ID",
+      "gameTypeName": "Game Type Name",
+      "franchise": "Franchise"
+    }
+  }
+}

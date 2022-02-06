@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20220206171307",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "franchise",
+  "fields": [
+    {
+      "fieldName": "franchiseName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "maxlength"],
+      "fieldValidateRulesMaxlength": "80"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Franchise",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "game",
+      "otherEntityRelationshipName": "franchise",
+      "relationshipName": "game",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "gameTypeName",
+      "otherEntityName": "gameType",
+      "otherEntityRelationshipName": "franchise",
+      "relationshipName": "gameType",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

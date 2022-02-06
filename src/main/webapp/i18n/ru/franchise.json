@@ -1,0 +1,26 @@
+{
+  "quizManagementApp": {
+    "franchise": {
+      "home": {
+        "title": "Franchises",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Franchise",
+        "createOrEditLabel": "Создать или отредактировать Franchise",
+        "notFound": "Franchises не найдено"
+      },
+      "created": "Новый Franchise создан с идентификатором {{ param }}",
+      "updated": "Franchise обновлен с идентификатором {{ param }}",
+      "deleted": "Franchise удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Franchise {{ id }}?"
+      },
+      "detail": {
+        "title": "Franchise"
+      },
+      "id": "ID",
+      "franchiseName": "Franchise Name",
+      "game": "Game",
+      "gameType": "Game Type"
+    }
+  }
+}

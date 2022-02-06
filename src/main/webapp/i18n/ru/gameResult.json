@@ -1,0 +1,28 @@
+{
+  "quizManagementApp": {
+    "gameResult": {
+      "home": {
+        "title": "Game Results",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Game Result",
+        "createOrEditLabel": "Создать или отредактировать Game Result",
+        "notFound": "Game Results не найдено"
+      },
+      "created": "Новый Game Result создан с идентификатором {{ param }}",
+      "updated": "Game Result обновлен с идентификатором {{ param }}",
+      "deleted": "Game Result удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Game Result {{ id }}?"
+      },
+      "detail": {
+        "title": "Game Result"
+      },
+      "id": "ID",
+      "place": "Place",
+      "points": "Points",
+      "link": "Link",
+      "table": "Table",
+      "game": "Game"
+    }
+  }
+}
